@@ -1,27 +1,27 @@
-.novidades {
+.contato {
     background-color: var(--branco);
     padding: 1em;
 }
 
-    .novidades__titulo,
-    .novidades__texto{
+    .contato__titulo,
+    .contato__texto{
         background: var(--azul-degrade);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 
-    .novidades__titulo { 
+    .contato__titulo { 
         font-weight: 500;
         font-size: 18px;
     }
 
-    .novidades__texto {
+    .contato__texto {
         font-weight: 300;
         margin: 1em 0;
     }
 
-    .novidades__email {
+    .contato__email {
         background-color: transparent;
         border: 1px solid var(--azul);
         border-radius: 24px;
@@ -30,10 +30,32 @@
         color: var(--azul);
     }
 
-    .novidades__email::placeholder {
+    .contato__email::placeholder {
         font-family: var(--fonte-principal);
         color: var(--azul);
         padding-left: 2em;
         background: url("../img/Email.svg") no-repeat;
         background-position: 0 -2px;
     }
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 6em;
+    }
+
+    .contato__descricao {
+        width: 50%;
+        margin-right: 1em;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+    }
+
+    .contato__email {
+        width: 50%;
+    }
+}
