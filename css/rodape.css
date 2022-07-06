@@ -14,7 +14,7 @@ hr {
 @media screen and (min-width: 1024px) {
     .rodape {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .rodape__titulo {
@@ -22,8 +22,7 @@ hr {
     }
 
     .rodape__lista {
-        display: flex;
-        flex-direction: column;
+        display: block;
     }
 
     .rodape__lista-item {   
@@ -44,5 +43,16 @@ hr {
     .rodape__lista-link {
         text-decoration: none;
         color: var(--cinza-escuro);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .rodape {
+        padding: 3em 6em;
+    }
+
+    .rodape__lista {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
     }
 }
